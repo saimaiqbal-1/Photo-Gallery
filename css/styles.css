@@ -1,7 +1,4 @@
-* {
-    box-sizing: border-box;
-  }
-  
+
   html {
     font-family: sans-serif;
   }
@@ -10,9 +7,6 @@
     margin: 0;
   }
 
-  main {
-    display: block;
-  }
 
   header {
     display: grid;
@@ -21,7 +15,7 @@
 
   header input {
     width: 100%;
-    max-width: 510px;
+    max-width: 70%;
     margin: auto;
     height: 45px;
     border: 2px solid #DDD;
@@ -29,84 +23,13 @@
     padding: 0 10px;
   }
 
-/* Wrappers */
-.wrapper-main {
-    margin: auto;
-}
-
-.wrapper-gallery {
-    margin: auto;
-    padding: 30px;
-    padding-top: 10px;
-}
 
 /* Gallery container */
-#index-gallery {
-	Display: grid;
-    max-width: 100%;
-    max-height: 100%;
-	Grid-template-columns: repeat(4, 1fr);
-	Grid-template-rows: auto;
-    Grid-gap: 15px;
-    grid-template-areas:
-    "img01 img02 img03 img04"
-    "img05 img06 img07 img08"
-    "img09 img10 img11 img12";
-}
-
-#index-gallery .gallery-img {
-    width: 100%;
-    height: 170px;
-    background-position: center;
-    background-size: cover;
-}
-
-/* Images */
-#index-gallery .img01 {
-    grid-area: img01;
-    background-image: url("../photos/thumbnails/01.jpg");
-}
-#index-gallery .img02 {
-    grid-area: img02;
-    background-image: url("../photos/thumbnails/02.jpg");
-}
-#index-gallery .img03 {
-    grid-area: img03;
-    background-image: url("../photos/thumbnails/03.jpg");
-}
-#index-gallery .img04 {
-    grid-area: img04;
-    background-image: url("../photos/thumbnails/04.jpg");
-}
-#index-gallery .img05 {
-    grid-area: img05;
-    background-image: url("../photos/thumbnails/05.jpg");
-}
-#index-gallery .img06 {
-    grid-area: img06;
-    background-image: url("../photos/thumbnails/06.jpg");
-}
-#index-gallery .img07 {
-    grid-area: img07;
-    background-image: url("../photos/thumbnails/07.jpg");
-}
-#index-gallery .img08 {
-    grid-area: img08;
-    background-image: url("../photos/thumbnails/08.jpg");
-}
-#index-gallery .img09 {
-    grid-area: img09;
-    background-image: url("../photos/thumbnails/09.jpg");
-}
-#index-gallery .img10 {
-    grid-area: img10;
-    background-image: url("../photos/thumbnails/10.jpg");
-}
-#index-gallery .img11 {
-    grid-area: img11;
-    background-image: url("../photos/thumbnails/11.jpg");
-}
-#index-gallery .img12 {
-    grid-area: img12;
-    background-image: url("../photos/thumbnails/12.jpg");
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    justify-items: center;
+    margin: 0 10px;
 }
